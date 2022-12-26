@@ -1,0 +1,1 @@
+We use this Design Pattern where we want to represent a hierarchy of objects, where we want to treat the objects in a hierarchy the same way. (think of a file system, where you delete a dir, all files inside of it are deleted.. or, groups in pttx for example, when you move whole group, all its components move the same way)

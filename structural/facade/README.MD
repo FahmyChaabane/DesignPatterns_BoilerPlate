@@ -1,0 +1,2 @@
+We use this pattern to provide a simple interface to a complexe system.
+// The NotificationService is acting as a facade to our notification system, this main class in our application, do not need to talk to these four classes to send a notification anymore (any other added class as well), they can simply talk to this NotificationService and it will forward that request to these individual four classes.

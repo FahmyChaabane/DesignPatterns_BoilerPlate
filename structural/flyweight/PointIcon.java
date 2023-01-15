@@ -12,5 +12,10 @@ public class PointIcon {
     public PointType getPointType() {
         return pointType;
     }
-    
+
+    // to get rid of the warning
+    public byte[] getIcon() {
+        return icon;
+    }
+
 }

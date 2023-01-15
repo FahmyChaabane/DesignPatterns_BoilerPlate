@@ -10,6 +10,21 @@ public class Presentation {
         slides.add(slide);
     }
     
+    public void export(PresentationBuilder builder) {
+        builder.addSlide(new Slide("Copyrights..."));
+        for(Slide slide : slides) {
+            builder.addSlide(slide);
+        }
+    }
+}
+
+class OldPresentation {
+    private List<Slide> slides = new ArrayList<Slide>();
+
+    public void addSlide(Slide slide) {
+        slides.add(slide);
+    }
+    
     public void export(PresentationFormat format) {
         if(format == PresentationFormat.PDF) {
             PdfDocument document = new PdfDocument();
